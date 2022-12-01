@@ -11,22 +11,33 @@
 
   <body>
     <h1 id="title">Survey</h1>
-    <p id="description">This is my newb survey form.</p>
+    <p id="description">Favourite game genre survey.</p>
     <form id="survey-form">
-        <label id="name-label">Name</label><br>
-        <input type="text" id="text" placeholder="Jane Doe"/><br>
+      <fieldset>
+        <label id="name-label"> Enter your Full Name: </label><br>
+        <input type="text" id="text" placeholder="Enter your name"/><br>
 
-        <label id="email-label">Email</label><br>
+        <label id="email-label"> Enter your Email: </label><br>
         <input type="email" id="email" placeholder="jane.doe@provider.com"/><br>
 
-        <label id="number-label">Number</label><br>
-        <input type="number" id="number" min="1" max="3" placeholder="8" required/>
+        <label id="number-label"> Enter your Age: </label><br>
+        <input type="number" id="number" min="1" max="120" placeholder="16" required/><br>
 
-        <select id="dropdown">
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-            <option value="Maybe">Maybe</option>
+        <label id="dropdown"> What genre of game do you like best? </label>
+        <select id="dropdown" name="dropdown">
+            <option value="">Select Genre</option>
+            <option value="1">Action</option>
+            <option value="2">Action-adventure</option>
+            <option value="3">Strategy</option>
+            <option value="4">Casual</option>
+            <option value="5">Adventure</option>
+            <option value="6">Shooters</option>
+            <option value="7">Survival/Horror</option>
+            <option value="8">Simulation</option>
+            <option value="9">Sports</option>
+            <option value="10">Other</option>
         </select>
+      </fieldset>
     </form>
   </body>
 
