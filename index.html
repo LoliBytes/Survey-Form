@@ -15,16 +15,16 @@
     <form id="survey-form">
       <fieldset>
         <label id="name-label"> Enter your Full Name: </label><br>
-        <input type="text" id="text" placeholder="Enter your name"/><br>
+        <input type="text" id="name" placeholder="Enter your name" value="Jane Doe" required/><br>
 
         <label id="email-label"> Enter your Email: </label><br>
-        <input type="email" id="email" placeholder="jane.doe@provider.com"/><br>
+        <input type="email" id="email" placeholder="jane.doe@provider.com" value="jane.doe@provider.com" required/><br>
 
         <label id="number-label"> Enter your Age: </label><br>
-        <input type="number" id="number" min="1" max="120" placeholder="16" required/><br>
+        <input type="number" id="number" min="1" max="120" placeholder="16" value="16" required/><br>
 
-        <label id="dropdown"> What genre of game do you like best? </label>
-        <select id="dropdown" name="dropdown">
+        <label id="dropdown"> What genre of game do you like best?</label><br>
+        <select id="dropdown" name="dropdown"><br>
             <option value="">Select Genre</option>
             <option value="1">Action</option>
             <option value="2">Action-adventure</option>
@@ -36,8 +36,17 @@
             <option value="8">Simulation</option>
             <option value="9">Sports</option>
             <option value="10">Other</option>
-        </select>
+        </select><br>
+        <label for="other-genre">If other, please provide further details below</label><br>
+        <textarea id="other-genre" name="other-genre" rows="3" cols="30" placeholder="..."></textarea><br>
+
+        <label id="recommend">Would you like recommendations based on your genre choice?</label><br>
+        <input type="radio" id="recommend" name="recommend" class="inline"><br>
+
+        <label id="dont-recommend">No</label><br>
+        <input type="radio" id="dont-recommend" name="dont-recommend" class="inline">
       </fieldset>
+      <input type="submit" value="Submit" />
     </form>
   </body>
 
