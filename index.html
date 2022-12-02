@@ -40,13 +40,26 @@
         <label for="other-genre">If other, please provide further details below</label><br>
         <textarea id="other-genre" name="other-genre" rows="3" cols="30" placeholder="..."></textarea><br>
 
-        <label id="recommend">Would you like recommendations based on your genre choice?</label><br>
-        <input type="radio" id="recommend" name="recommend" class="inline"><br>
+        <h4>What platform do you play games on?</h4>
+        <label id="platform">PC</label>
+        <input type="checkbox" id="PC" name="PC" class="inline" value="PC"><br>
+
+        <label id="platform">Macos</label>
+        <input type="checkbox" id="macos" name="macos" class="inline" value="macos"><br>
+        
+        <label id="platform">Console</label>
+        <input type="checkbox" id="console" name="console" class="inline" value="console"><br>
+        
+        <h4> Would you like recommendations based on your genre choice?</h4>
+        <label id="recommend">Yes</label><br>
+        <input type="radio" id="recommend" name="recommend" class="inline" value="Yes"><br>
 
         <label id="dont-recommend">No</label><br>
-        <input type="radio" id="dont-recommend" name="dont-recommend" class="inline">
+        <input type="radio" id="dont-recommend" name="dont-recommend" class="inline" value="No">
+
+        <input id= "submit" type="submit" value="Submit" />
+        </fieldset>
       </fieldset>
-      <input type="submit" value="Submit" />
     </form>
   </body>
 
